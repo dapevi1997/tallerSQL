@@ -17,3 +17,11 @@ select sup_name
  inner join product on supplier.sup_id=product.supplier_sup_id
        inner join customer_product_bought on product.pro_id = customer_product_bought.product_pro_id
        where customer_product_bought.product_pro_id=5;
+-- -----------------------------------------------------
+-- Productos más vendidos.
+-- -----------------------------------------------------
+select product_pro_id, product.pro_name, count(product.pro_name) as amount from customer_product_bought
+ inner join product on product.pro_id=customer_product_bought.product_pro_id
+group by product.pro_name
+having count(product_pro_id) > 1
+order by count(product.pro_name) desc ;

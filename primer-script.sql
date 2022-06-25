@@ -79,6 +79,8 @@ insert into customer(cus_name, cus_document_type, cus_document)values
 ('Daniel','CC','1103119753');
 insert into customer(cus_name, cus_document_type, cus_document)values
 ('José','TI','1103119753');
+insert into customer(cus_name, cus_document_type, cus_document)values
+('Camilo','CC','115425963');
 -- -----------------------------------------------------
 -- Guardado de productos.
 -- -----------------------------------------------------
@@ -99,6 +101,8 @@ insert into customer_product_bought(customer_cus_id,product_pro_id) VALUES (1,3)
 insert into customer_product_bought(customer_cus_id,product_pro_id) VALUES (1,9);
 insert into customer_product_bought(customer_cus_id,product_pro_id) VALUES (1,5);
 insert into customer_product_bought(customer_cus_id,product_pro_id) VALUES (1,8);
+insert into customer_product_bought(customer_cus_id,product_pro_id) VALUES (1,7);
+insert into customer_product_bought(customer_cus_id,product_pro_id) VALUES (1,6);
 -- -----------------------------------------------------
 -- Guardado de compras de José.
 -- -----------------------------------------------------
@@ -107,6 +111,13 @@ insert into customer_product_bought(customer_cus_id,product_pro_id) VALUES (2,3)
 insert into customer_product_bought(customer_cus_id,product_pro_id) VALUES (2,4);
 insert into customer_product_bought(customer_cus_id,product_pro_id) VALUES (2,6);
 insert into customer_product_bought(customer_cus_id,product_pro_id) VALUES (2,7);
+insert into customer_product_bought(customer_cus_id,product_pro_id) VALUES (2,8);
+insert into customer_product_bought(customer_cus_id,product_pro_id) VALUES (2,5);
+-- -----------------------------------------------------
+-- Guardado de compras de Camilo.
+-- -----------------------------------------------------
+insert into customer_product_bought(customer_cus_id, product_pro_id) VALUES (3,6);
+insert into customer_product_bought(customer_cus_id,product_pro_id) VALUES (3,7);
 -- -----------------------------------------------------
 -- Mostrar ventas.
 -- -----------------------------------------------------
